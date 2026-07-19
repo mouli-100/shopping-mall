@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+public class Mall{
+    
+        void starting(){
+            System.out.println("Welcome to the complex");
+        }
+        void decision(){
+            
+       System.out.println("DO YOU WANT TO ROME OR SHOP");
+       Scanner sc=new Scanner(System.in);
+       String m=sc.next();
+       if(m.equals("shop")||m.equals("SHOP")){
+           System.out.println("------STALLS IN THE COMPLEX------");
+           System.out.println("1.GAMING------\n2.DRESSES------\n3.SNACKS------\n4.MOVIE--------\n");
+           int s = sc.nextInt();
+           switch(s){
+               case 1:
+                    
+                        System.out.println("------MENU------\n1.CAR RACE---\nPUBG-------\n");
+                    
+                   break;
+                   case 2: 
+                       System.out.println("------MENU------\n1.SAREE----\n2.PUNJABI---\n3.PANTS----\n4.TRACKS---\n5.SHIRTS---\n6.T-SHIRTS");
+                   
+                   break;
+                   case 3:int a=sc.nextInt();
+                   
+                       
+                           System.out.println("------MENU------\n1.KARAREE---\n2.CAKES---\n3.COTTON CANDY---\n4.CHICKHEN BONDA---\n5.PANEER MASALA---");
+                           
+                       
+                       break;
+                       case 4: 
+                           System.out.println("------MENU------\n1.JAMBALAKADI BHAMBHA\n2.SALAAR\n3.RAJARANI\n4.PUSHPA\n5.RESU GURRAM\n");
+                       break;
+           }
+       }
+        else{
+            System.out.println("OK ENJOY YOUR DAY!");
+        }
+        
+           
+sc.close();
+}
+        public static void main(String[] args){
+            Mall m=new Mall();
+            m.starting();
+            m.decision();
+            return;
+        }
+}
