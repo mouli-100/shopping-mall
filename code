@@ -1,5 +1,6 @@
 import java.util.Scanner;
- class Mall{
+public class Main{
+ static class Mall{
     
         void starting(){
             System.out.println("Welcome to the complex");
@@ -49,6 +50,7 @@ int c=sc.nextInt();
 
 sc.close();
 }
+}
 
         public static void main(String[] args){
             Mall m = new Mall();
@@ -56,4 +58,4 @@ sc.close();
             m.decision();
             return;
         }
- };
+ }
