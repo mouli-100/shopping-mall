@@ -1,52 +1,59 @@
 import java.util.Scanner;
-
-public class Mall{
+ class Mall{
     
         void starting(){
             System.out.println("Welcome to the complex");
         }
         void decision(){
-            
+
        System.out.println("DO YOU WANT TO ROME OR SHOP");
        Scanner sc=new Scanner(System.in);
        String m=sc.next();
-       if(m.equals("shop")||m.equals("SHOP")){
+       if( m.equals("shop") || m.equals("SHOP")){
            System.out.println("------STALLS IN THE COMPLEX------");
            System.out.println("1.GAMING------\n2.DRESSES------\n3.SNACKS------\n4.MOVIE--------\n");
            int s = sc.nextInt();
            switch(s){
                case 1:
-                    
-                        System.out.println("------MENU------\n1.CAR RACE---\nPUBG-------\n");
-                    
+
+                        System.out.println("------MENU------\n1.CAR RACE---\n2.--PUBG-------\n");
+int a=sc.nextInt();
+System.out.println("PAYMENT DONE\nENJOY YOUR GAME");
                    break;
                    case 2: 
                        System.out.println("------MENU------\n1.SAREE----\n2.PUNJABI---\n3.PANTS----\n4.TRACKS---\n5.SHIRTS---\n6.T-SHIRTS");
-                   
+int b=sc.nextInt();
+System.out.println("PAYMENT DONE\nHAVE A NICE DAY");
                    break;
-                   case 3:int a=sc.nextInt();
-                   
-                       
-                           System.out.println("------MENU------\n1.KARAREE---\n2.CAKES---\n3.COTTON CANDY---\n4.CHICKHEN BONDA---\n5.PANEER MASALA---");
-                           
-                       
+                   case 3:
+
+
+                           System.out.println("------MENU------\n1.KARAREE---Rs.10\n2.CAKES---RS.30\n3.COTTON CANDY---Rs.15\n4.CHICKHEN BONDA---Rs.50\n5.PANEER MASALA---Rs.100");
+
+int c=sc.nextInt();
+
+    System.out.println("PAYMENT DONE\nHERES YOUR ORDER");
+
                        break;
                        case 4: 
                            System.out.println("------MENU------\n1.JAMBALAKADI BHAMBHA\n2.SALAAR\n3.RAJARANI\n4.PUSHPA\n5.RESU GURRAM\n");
-                       break;
+                       int d=sc.nextInt(); 
+                System.out.println("PAYMENT DONE\nENJOY YOUR MOVIE");
+                break;
            }
        }
         else{
             System.out.println("OK ENJOY YOUR DAY!");
         }
-        
-           
+
+
 sc.close();
 }
+
         public static void main(String[] args){
-            Mall m=new Mall();
+            Mall m = new Mall();
             m.starting();
             m.decision();
             return;
         }
-}
+ };
